@@ -1,0 +1,148 @@
+[22:31, 07/11/2024] Avika: /* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header styling */
+header {
+    background-color: #006994;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #004c6d;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling for sections */
+.container {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles */
+h2 {
+    color: #006994;
+    margin-bottom: 1rem;
+}
+
+/* General paragraph and list styling */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+/* Image styling */
+section img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #006994;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #004c6d;
+}
+
+/* Scroll-to-top button styling */
+#scrollTopBtn {
+    background-color: #006994;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+#scrollTopBtn:hover {
+    background-color: #004c6d;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #006994;
+    color: white;
+    margin-top: 2rem;
+}
