@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Plastic Pollution Awareness</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Have a question, a story, or a local initiative to share? We would love to hear from you.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="effects.html">Effects</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h2>Get in touch</h2>
+            <p>Use the form below to share ideas, ask for resources, or tell us about cleanup efforts in your area. We respond to every message within two business days.</p>
+            <div class="info-grid">
+                <div>
+                    <h3>What to include</h3>
+                    <ul>
+                        <li>Your location and the issue you are seeing.</li>
+                        <li>Any organizations you are already working with.</li>
+                        <li>How we can best support your next steps.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Other ways to connect</h3>
+                    <p>Email: hello@plasticawareness.org</p>
+                    <p>Community updates: Monthly newsletter with cleanup and policy news.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Send a message</h2>
+            <form action="#" method="post" onsubmit="alert('Thank you for reaching out!'); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Scroll to top">⬆️</button>
+
+    <footer>
+        <p>&copy; 2024 Plastic Pollution Awareness</p>
+    </footer>
+</body>
+</html>

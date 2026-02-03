@@ -45,7 +45,7 @@ header h1 {
 header p {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
@@ -69,6 +69,7 @@ nav a {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     font-weight: 600;
+    position: relative;
 }
 
 nav a:hover,
@@ -76,11 +77,26 @@ nav a:focus-visible {
     color: var(--accent);
 }
 
+nav a[aria-current="page"] {
+    color: var(--accent);
+}
+
+nav a[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.4rem;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 999px;
+}
+
 /* Container styling for sections */
 .container {
     padding: 2.5rem 2.5rem 2rem;
     margin: 2.5rem auto;
-    max-width: 880px;
+    max-width: 900px;
     background-color: var(--paper);
     border-radius: 18px;
     box-shadow: var(--shadow);
@@ -94,13 +110,20 @@ h2 {
     font-size: clamp(1.5rem, 2.2vw, 2rem);
 }
 
+h3 {
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+
 /* General paragraph and list styling */
 p {
     margin-bottom: 1rem;
     color: var(--muted);
 }
 
-ul {
+ul,
+ol {
     margin-left: 1.25rem;
     color: var(--muted);
 }
@@ -121,6 +144,50 @@ section img {
     height: auto;
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+/* Call to action buttons */
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.6rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    background: var(--accent-dark);
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.button-outline:hover,
+.button-outline:focus-visible {
+    background: rgba(15, 118, 110, 0.08);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
 }
 
 /* Form styling */
@@ -180,6 +247,9 @@ input[type="submit"]:hover {
     font-size: 1.1rem;
     cursor: pointer;
     display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
 }
 
@@ -206,5 +276,9 @@ footer {
     .container {
         padding: 2rem 1.5rem;
         margin: 2rem 1rem;
+    }
+
+    nav a[aria-current="page"]::after {
+        bottom: -0.2rem;
     }
 }
